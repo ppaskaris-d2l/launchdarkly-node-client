@@ -23,7 +23,7 @@
   "homepage": "https://github.com/launchdarkly/node-client",
   "dependencies": {
     "async": "^2.0.0",
-    "node-cache": "^3.2.1",
+    "node-cache": "^4.0.0",
     "original": "^1.0.0",
     "redis": "^2.6.0-2",
     "requestify": "https://github.com/launchdarkly/requestify/tarball/d7e23d3f05e55415f50c0970a7e61bea5336f18f",
