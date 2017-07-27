@@ -1,11 +1,15 @@
 var operators = require('./operators');
 var util = require('util');
-var sha1 = require('node-sha1');
+var crypto = require('crypto');
 var async = require('async');
 
 var builtins = ['key', 'ip', 'country', 'email', 'firstName', 'lastName', 'avatar', 'name', 'anonymous'];
 
 var noop = function(){};
+
+function sha1(text) {
+  return crypto.createHash('sha1').update(text).digest('hex');
+}
 
 function evaluate(flag, user, store, cb) {
   cb = cb || noop;
